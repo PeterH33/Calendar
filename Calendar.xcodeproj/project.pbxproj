@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C02934028C10225009BE04B /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02933F28C10225009BE04B /* StreakView.swift */; };
 		4CB1AE7D28BFEC0400E9B3F9 /* CalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1AE7C28BFEC0400E9B3F9 /* CalendarApp.swift */; };
 		4CB1AE7F28BFEC0400E9B3F9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1AE7E28BFEC0400E9B3F9 /* CalendarView.swift */; };
 		4CB1AE8128BFEC0400E9B3F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB1AE8028BFEC0400E9B3F9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C02933F28C10225009BE04B /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
 		4CB1AE7928BFEC0400E9B3F9 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB1AE7C28BFEC0400E9B3F9 /* CalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarApp.swift; sourceTree = "<group>"; };
 		4CB1AE7E28BFEC0400E9B3F9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				4CB1AE7C28BFEC0400E9B3F9 /* CalendarApp.swift */,
 				4CB1AE7E28BFEC0400E9B3F9 /* CalendarView.swift */,
+				4C02933F28C10225009BE04B /* StreakView.swift */,
 				4CB1AE8F28C0F5F400E9B3F9 /* DateExtension.swift */,
 				4CB1AE8028BFEC0400E9B3F9 /* Assets.xcassets */,
 				4CB1AE8528BFEC0400E9B3F9 /* Persistence.swift */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C02934028C10225009BE04B /* StreakView.swift in Sources */,
 				4CB1AE8628BFEC0400E9B3F9 /* Persistence.swift in Sources */,
 				4CB1AE9028C0F5F400E9B3F9 /* DateExtension.swift in Sources */,
 				4CB1AE7F28BFEC0400E9B3F9 /* CalendarView.swift in Sources */,
