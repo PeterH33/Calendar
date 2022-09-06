@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import WidgetKit
 
 struct CalendarView: View {
     //view context is what holds all work with core data, needs to be in every view that uses core data
@@ -21,20 +22,12 @@ struct CalendarView: View {
         animation: .default)
     private var days: FetchedResults<Day>
     
-    let daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"]
     
     
     var body: some View {
         NavigationView {
             VStack{
-                HStack{
-                    ForEach(daysOfWeek, id: \.self) {dayOfWeek in
-                        Text(dayOfWeek)
-                            .fontWeight(.black)
-                            .foregroundColor(.secondary)
-                            .frame(maxWidth: .infinity)
-                    }
-                }
+                CalendarHeaderView()
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7)) {
                     ForEach(days) { day in
                         if day.date!.monthInt != Date().monthInt{
@@ -55,6 +48,8 @@ struct CalendarView: View {
                                         
                                         do{
                                             try viewContext.save()
+                                            //This lets you reload a widget timeline based on a function in the app, use when you want to have your actions in the app have an effect on widget.
+                                            WidgetCenter.shared.reloadTimelines(ofKind: "SwiftCalWidget")
                                             print("🖕✅ \(day.date!.dayInt)Toggle Save successful")
                                         } catch {
                                             print("❌Failed to save Toggle")
